@@ -1,79 +1,373 @@
-<!doctype html>
- <html>
- <head>
-  <link href="/normalize.css" rel="stylesheet">
-  <style>
-    header {
-      text-align: center;
-      background: url("http://i.imgur.com/mrsjGku.jpg");
-      background-size: cover;
-      color: white;
-    }
-    a {
-      color: white;
-    }
-    h1 {
-      font-size: 70px;
-    }
-    img {
-      margin: 40px 0px 0px 0px;
-      border: 7px solid white;
-      border-radius: 20px;
-    }
-    ul {
-      padding: 10px;
-      background: rgba(0,0,0,0.5);
-    }
-    li {
-      display: inline;
-      padding: 0px 10px 0px 10px;
-    }
-    article {
-      max-width: 500px;
-      padding: 20px;
-      margin: 0 auto;
-    }
-    @media (max-width: 500px) {
-      h1 {
-        font-size: 36px;
-        padding: 5px;
-      }
-      li {
-        padding: 5px;
-        display: block;
-      }
-    }
-  </style>
-</head>
-  <body>
-  <header>
-    <img src="http://i.imgur.com/mlr9xmd.jpg" width="200" height="200">
-    <h1>Julio Villafane</h1>
-    <ul>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Research Business Decks</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </header>
-  <article>
-    <h2>The road to IT</h2>
-    <p>Coding--->Java/SQL/R/Python</p>
-    <button>Like</button>
-  </article>
-  <article>
-    <h2>Gymcentive assumptions</h2>
-    <p>Over 70% of Americans work out with their smartphones, and gym dropout rates are at an all time high. Smartphones can increase year-end retention via a loss-aversion tracking app</p>
-    <button>Like</button>
-  </article>
-  <article>
-    <h2>uShare & uMopeds transportation models</h2>
-    <p>Green mode of transport with visualization dashboards to gamify/incentivize ridership</p>
-    <button>Like</button>
-  </article>
-  <script>
-    $("button").on("click", function() {
-      alert("Clicked!");
-    });
-  </script>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" type="text/css" href="css/screen.css" />
+          <!--[if IE 7]>
+	<link rel="stylesheet" type="text/css" href="css/ie7.css">
+<![endif]-->  
+        
+        
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="js/jquery.easing.1.3.js" type="text/javascript" ></script>
+		<script src="js/menu.js" type="text/javascript" ></script>
+		<script src="js/cufon-yui.js" type="text/javascript"></script>
+		<script src="js/Proxima_Nova_Rg_700-Avenir_LT_Std_750.font.js" type="text/javascript"></script>
+		<script type="text/javascript">
+				Cufon.replace('.nummer'); // Works without a selector engine
+			Cufon.replace('.fact'); // Works without a selector engine
+			Cufon.replace('h1'); // Works without a selector engine
+			Cufon.replace('h2'); // Works without a selector engine
+			Cufon.replace('h3'); // Works without a selector engine
+		</script>
+        
+        <script type="text/javascript">
+  $(document).ready(function () {
+     
+   
+	
+	$('#btn_waaromdeelnemen').click(
+		function(){
+			$('html, body').animate({ scrollTop: $('#waaromdeelnemen').offset().top}, 1000, 'easeOutQuint');
+			}
+		
+      );
+	  
+	$('#btn_bekijkbeursplan').click(
+		function(){
+			$('html, body').animate({ scrollTop: $('#beursplan').offset().top}, 2000, 'easeOutQuint');
+			}
+		
+      );	
+	  
+	$('#btn_praktischeinfo').click(
+		function(){
+			$('html, body').animate({ scrollTop: $('#praktischeinfo').offset().top}, 3000, 'easeOutQuint');
+			}
+		
+      );
+	  
+	$('#btn_deelnamevoorwaarden').click(
+		function(){
+			$('html, body').animate({ scrollTop: $('#deelnamevw').offset().top}, 3000, 'easeOutQuint');
+			}
+		
+      );
+	  
+	 $('#btn_contacteerons').click(
+		function(){
+			$('html, body').animate({ scrollTop: $('#contact').offset().top}, 3000, 'easeOutQuint');
+			}
+		
+      );
+	  
+	  
+	  });
+	  </script>
+        
+       
+       <link rel="stylesheet" href="fancybox/jquery.fancybox.css?v=2.1.4" type="text/css" media="screen" />
+		<script type="text/javascript" src="fancybox/jquery.fancybox.pack.js?v=2.1.4"></script>
+        <script type="text/javascript" src="fancybox/helpers/jquery.fancybox-media.js?v=1.0.5"></script>
+        <script type="text/javascript">
+		  $('#videobtn a')
+				.fancybox({
+					openEffect : 'none',
+					closeEffect : 'none',
+					padding: 0,
+					arrows : false,
+					helpers : {
+						media : {},
+						buttons : {}
+					}
+				});
+		</script>
+		
+        
+		<title>Belgian Boat Show 2014</title>
+		</head>
+
+		<body>
+<div id="wrapper">
+          <div id="header">
+           <div id="videobtn">
+          	<a href="http://youtu.be/Wmy6B6FDpZ0"><img src="images/videobtn.png" alt="Bekijk hier een video van de vorige editie" /></a>
+          </div>
+          <div id="talen">
+          	<div id="nl"><a href="../nl" ></a></div>
+            <div id="fr"><a href="../fr" class="active"></a></div>
+          </div>
+    <div id="innerheader">
+              <div id="logo"><img src="images/logo.png" alt="bis" /></div>
+              <div id="menu">
+			<ul>
+            	<li id="btn_waaromdeelnemen"><a href="javascript:void(0);"><img src="images/btn_waaromdeelnemen.png" alt="Waarom deelnemen?" /></a></li>
+               <li id="btn_bekijkbeursplan"><a href="#"><img src="images/btn_bekijkbeursplan.png" alt="Bekijk beursplan" /></a></li>
+               <li id="btn_praktischeinfo"><a href="#"><img src="images/btn_praktischeinfo.png" alt="Praktische info" /></a></li>
+               <li id="btn_deelnamevoorwaarden"><a href="#"><img src="images/btn_deelnamevoorwaarden.png" alt="Deelnamevoorwaarden" /></a></li>
+               <li id="btn_contacteerons"><a href="#"><img src="images/btn_contacteerons.png" alt="Contacteer ons" /></a></li>
+            </ul>
+            <div class="btninvullen" id="btninvullen_top"><a href="deelnameformulier.html" target="_blank"><img src="images/btn_deelnameformulier.png" alt="Vul uw deelnameformulier in" /></a></div>
+            </div>
+             
+            </div>
+  </div>
+  <div id="waaromdeelnemen">
+    <div id="innerwaaromdeelnemen">
+    <div class="top"> <a href="javascript:void(0)" class="topbeursplan"><img src="images/top.png" alt="Ga terug naar het menu" /></a></div>
+    <div id="leftfacts">
+            	<h1>Pourquoi<br/><span style="font-size:40px; color:#fff; height:20px; display:block; margin-top:-8px;">participer?</span></h1>
+                <p class="nummer">2</p>
+                <p class="fact">Ouvert <span class="wit">pendant 2 week-ends prolongés</span>. Les jours de fermeture vous donnent la possibilité d'assurer immédiatement le suivi des contacts intéressants. </p>
+                <p class="nummer">20</p>
+                <p class="fact">30.000 amateurs de sports aquatiques étaient au rendez-vous l'édition passée, signifiant <span class="wit">une augmentation du nombre de visiteurs de 20%</span>, ni plus ni moins!</p>
+            </div>	
+            <div id="rightfacts">
+                <p class="nummer">22.831</p>
+                <p class="fact">Belgian Boat Show garantit <span class="wit">22.831m&sup2;</span> de plaisir et de sports aquatiques sous le même toit</p>
+                <p class="nummer">7,5</p>
+                <p class="fact">en 2013, les exposants donnaient <span class="wit">une moyenne de 7,5/10</span> pour la qualité du salon </p>
+                <p class="nummer">70</p>
+                <p class="fact"><span class="wit">Pas moins de 70%</span> indique être <br/>un visiteur fidèle du salon</p>
+            </div>
+      </div>
+  	</div>
+	<div id="beursplan">
+    	<div id="innerbeursplan">
+        <div class="top"> <a href="javascript:void(0)" class="topbeursplan"><img src="images/top.png" alt="Ga terug naar het menu" /></a></div>
+        	<h1>LE PLAN</h1>   	
+			
+        </div>
+    </div>
+    <div id="praktischeinfo">
+    
+    	<div id="innerpraktischeinfo">
+        	<div class="top"> <a href="javascript:void(0)" class="topbeursplan"><img src="images/top.png" alt="Ga terug naar het menu" /></a></div>
+            
+            <h1>Informations pratiques</h1>
+            <div style="clear:both; width:950px;">
+            <div class="praktischkolom">
+            	<h2>Où</h2>
+                <p>Flanders expo, <br />Maaltekouter 1, 9051 Gand</p>
+                <h2>Quand</h2>
+                <p>8 au 10 &amp; 14 au 16 février 2014</p>
+                <h2>Heures d'ouverture</h2>
+                <p>samedi 08/02: 10 - 18h<br/>
+dimanche 09/02: 10 - 18h<br/>
+lundi 10/02: 10 - 18h</p>
+<p>vendredi 14/02: 10 - 22h<br/>
+samedi 15/02: 10 - 18h<br/>
+dimanche 16/02: 10 - 18h</p>
+            </div>
+            <div class="praktischkolom" style="margin-left:22px;">
+            	<h2>Montage</h2>
+                <p><strong>Exposants avec un propre stand</strong><br/>
+                <strong>Hall 8:</strong><br/> 
+				du lundi 3 au vendredi 7 février<br/>
+                <strong>Hal 3-5-7:</strong><br/> 
+				du mardi 4 au vendredi 7 février<br/>
+               Tous les jours de 8 - 20h et  <br/>le vendredi jusqu’au 22h</p>
+               <p><strong>Exposants avec un stand basic ou all-in construit par Artexis</strong><br/>
+               Jeudi 6 février de 8 - 20h<br/>
+				Vendredi 7 février de 8 - 22h</p>
+                <h2>Démontage</h2>
+                <p>Dimanche 16 février : 18h30 - 24h<br/>
+Lundi 17 février : 8 - 20h<br/>
+Mardi 18 février : 8 - 20h</p>
+            </div>
+           <div class="praktischkolom" style="margin-left:0px; width:200px;">
+            	<h2>Tarifs</h2>
+                <p><strong>Adultes: </strong><br/>10,00 euros</p>
+				<p><strong>Prévente par site internet: </strong><br/>8,00 euros</p>
+				<p><strong>Groupes de 15 personnes ou plus: </strong><br/>8,00 euros</p>
+				<p><strong>Enfants entre 6 et 12 ans: </strong><br/>6,00 euros</p>
+				<p><strong>Enfants moins de 6 ans:</strong><br/>gratuits</p>
+            </div>
+        </div>
+        </div>
+    </div>
+	<div id="deelnamevw">
+    	<div id="innerdeelnamevw">
+        <div class="top"> <a href="javascript:void(0)" class="topbeursplan"><img src="images/top.png" alt="Ga terug naar het menu" /></a></div>
+        <h1>Conditions de participation</h1>
+        	<div id="left">
+            	
+            	<h2>A. Surface nue</h2>
+                
+                <table class="prijzentabel" cellpadding="0" cellspacing="0">
+                	<tr>
+                    	<td style="width:100px;">&nbsp;</td>
+                        <td align="center"><strong>Inscription entre 01/04/2013 et 30/09/2013</strong></td>
+                        <td align="center"><strong>Inscription à partir du 01/10/2013</strong></td>
+                    </tr>
+                	<tr>
+                    	<td>12 - 99m&sup2;</td>
+                        <td align="center">€ 62,00 / m&sup2; </td>
+                        <td align="center">€ 70,00 / m&sup2;</td>
+                       
+                    </tr>
+                    <tr>
+                    	<td>100 - 249 m&sup2;</td>
+                        <td align="center">€ 55,00 / m&sup2;</td>
+                        <td align="center">€ 65,00 / m&sup2;</td>
+                       
+                    </tr>
+                    <tr>
+                    	<td>250 - 499 m&sup2;</td>
+                        <td align="center">€ 49,00 / m&sup2;</td>
+                        <td align="center">€ 58,00 / m&sup2;</td>
+                       
+                    </tr>
+                    <tr>
+                    	<td>à partir de 500 m&sup2;</td>
+                        <td align="center">€ 42,00 / m&sup2;</td>
+                        <td align="center">€ 50,00 / m&sup2;</td>
+                        
+                    </tr>
+                </table>
+                <h2>B. Supplément pour l'aménagement d'un "Stand Basic"</h2>
+                <p>€ 29,00/m&sup2;<br/>
+				Ceci comprend: cloisons modulaires, enseigne avec lettrage noir, tapis</p>
+                <h2>C. Supplément pour l'aménagement d'un "Stand Basic + Formule All-in"</h2>
+                <p>€ 68,50/m&sup2;<br/>
+				Ceci comprend: Stand Basic, raccordement électrique  1x16A, éclairage (1 spot 100W/4m²), 1 bloc multiprises (4), mobilier, nettoyage quotidien de la surface du stand</p>
+
+				<h2>D. ILE DE LA VOILE</h2>
+                
+                <table class="prijzentabel" cellpadding="0" cellspacing="0">
+                	<tr>
+                    	<td><strong>En combinaison avec emplacement sous A.</strong></td>
+                        <td></td>
+                    </tr>
+                	<tr>
+                    	
+                        <td style="width:300px;">1 yacht</td>
+                        <td style="width:220px;" align="center">€ 1.495,00</td>
+                    </tr>
+                	<tr>
+                    	<td>2 yachts</td>
+                        <td align="center">€ 1.875,00</td>                       
+                    </tr>
+                    <tr>
+                    	
+                        <td>à partir du 3ème yacht</td>
+                        <td align="center">€ 300,00 / yacht</td>
+                       
+                    </tr>
+                    
+                </table>
+                
+                 <table class="prijzentabel" cellpadding="0" cellspacing="0">
+                	<tr>
+                    	<td><strong>Sans emplacement sous A.</strong></td>
+                        <td></td>
+                    </tr>
+                	<tr>
+                    	
+                        <td style="width:300px;">1 yacht</td>
+                        <td style="width:220px;" align="center">€ 2.950,00</td>
+                    </tr>
+                	<tr>
+                    	<td>2 yachts</td>
+                        <td align="center">€ 3.700,00</td>                       
+                    </tr>
+                    <tr>
+                    	
+                        <td>à partir du 3ème yacht</td>
+                        <td align="center">€ 550,00 / yacht</td>
+                       
+                    </tr>
+                    
+                </table>
+            </div>
+            <div id="right">
+            
+            	<h2>E. Grutier</h2>
+                <table class="prijzentabel" cellpadding="0" cellspacing="0">
+                	<tr>
+                    	
+                        <td style="width:100px;">Coût initial:</td>
+                        <td style="width:200px;">&nbsp;</td>
+                        <td style="width:100px;" align="center">€ 50,00 / exposant</td>
+                    </tr>
+                	<tr>
+                    	<td>Par bateau:</td>
+                        <td align="center">< 24 pieds</td>
+                        <td align="center">€ 30,00</td>
+                    </tr>
+                    <tr>
+                    	<td>&nbsp;</td>
+                        <td align="center">24 – 32 pieds</td>
+                        <td align="center">€ 60,00</td>
+                    </tr>
+                    <tr>
+                    	<td >&nbsp;</td>
+                        <td align="center">> 32 pieds</td>
+                        <td align="center">€ 90,00</td>
+                    </tr>
+                    
+                </table>
+                <h2>F. Frais fixes obligatoires</h2>
+                <ul>
+                	<li>Droit d’inscription, les frais de dossier, la mention sur le site internet, la participation aux frais de réception et 50 cartes d’entrée: € 400,00<br/>(Vous pouvez commander des entrées gratuites supplémentaires jusqu’à épuisement du stock)</li>
+     				<li>Assurance responsabilité civile: € 25,00</li>
+     				<li>Assurance tous risques: en fonction de la valeur des marchandises exposées. La prime se chiffre à 0,48% sur la valeur à assurer, la prime minimale ressort à € 50,00 (pour une valeur de € 10.000)	</li>
+                </ul>
+             	<h2 style="padding-bottom:0px;">G. Prix eau et électricité</h2>
+                <table class="prijzentabel" cellpadding="0" cellspacing="0">
+                	<tr>
+                    	
+                        <td colspan="2">Raccordement à l'eau, consommation comprise avec évacuation</td>
+                        
+                        <td>€ 243,00</td>
+                    </tr>
+                	<tr>
+                    	<td>Electricité</td>
+                        <td>3.520 W - 1x16 A - 220 V</td>
+                        <td>€ 190,00</td>
+                    </tr>
+                    <tr>
+                    	<td>&nbsp;</td>
+                        <td>7.040 W - 2x 1x16 A  - 220 V</td>
+                        <td>€ 268,00</td>
+                    </tr>
+                    <tr>
+                    	<td>&nbsp;</td>
+                        <td>10.530 W - 3x16 A - 3 x 380 V+ N</td>
+                        <td>€ 384,00</td>
+                    </tr>
+                    
+                </table>
+                <p>Tous les prix s'entendent TVA non compris (21%)</p>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+    	<div id="innercontact">
+        	
+        	<h1>Contactez-nous</h1>
+            <div id="contactgegevens">
+            <p><strong>Christophe Coseyns</strong> - Sales Executive - T +32 (0)9 241 94 50 - F +32 (0)9 241 95 75 - E <a href="mailto:christophe.coseyns@artexis.com">christophe.coseyns@artexis.com</a><br/>
+            <strong>Valérie Vanassche</strong> - Exhibition Coordinator - T +32 (0)9 241 94 71 - F +32 (0)9 241 95 75 - E <a href="mailto:valerie.vanassche@artexis.com">valerie.vanassche@artexis.com</a></p>
+            </div>
+            <div class="btninvullen" id="btninvullen_contact"><a href="deelnameformulier.html" target="_blank"><img src="images/btn_deelnameformulier.png" alt="Vul uw deelnameformulier in" /></a></div>
+        </div>
+    </div>
+	<div id="credits">
+    	<div id="innercredits">
+        <div id="menu">
+        <p>Artexis &copy; 2013 - Alle rechten voorbehouden - site by <a href="http://www.moqo.be" target="_blank">moqo</a>
+        </div>
+        <div id="artexis">
+        	<a href="http://www.artexis.be" target="_blank"><img src="images/artexis.png" alt="Artexis" /></a>
+        </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript"> Cufon.now(); </script>
+ 
+		<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+        <link rel="stylesheet" href="fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+       
 </body>
 </html>
