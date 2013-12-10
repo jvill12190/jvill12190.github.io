@@ -1,80 +1,194 @@
 <!doctype html>
- <html>
- <head>
-  <link href="/normalize.css" rel="stylesheet">
-  <style>
-    header {
-      text-align: center;
-      background: url("http://i.imgur.com/mrsjGku.jpg");
-      background-size: cover;
-      color: white;
-    }
-    a {
-      color: white;
-    }
-    h1 {
-      font-size: 70px;
-    }
-    img {
-      margin: 40px 0px 0px 0px;
-      border: 7px solid white;
-      border-radius: 20px;
-    }
-    ul {
-      padding: 10px;
-      background: rgba(0,0,0,0.5);
-    }
-    li {
-      display: inline;
-      padding: 0px 10px 0px 10px;
-    }
-    article {
-      max-width: 500px;
-      padding: 20px;
-      margin: 0 auto;
-    }
-    @media (max-width: 500px) {
-      h1 {
-        font-size: 36px;
-        padding: 5px;
-      }
-      li {
-        padding: 5px;
-        display: block;
-      }
-    }
-  </style>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A layout example that shows off a responsive pricing table.">
+
+    <title>Pricing Table &ndash; Layout Examples &ndash; Pure</title>
+
+    
+
+
+
+
+
+
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
+
+
+
+
+
+<link rel="stylesheet" href="/combo/1.7.8?/css/layouts/pricing.css">
+
+
+
+
+    
+<script src="http://use.typekit.net/gis6vng.js"></script>
+<script>
+    try { Typekit.load(); } catch (e) {}
+</script>
+
+
+    
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-41480445-1', 'purecss.io');
+ga('send', 'pageview');
+</script>
+
+
 </head>
-  <body>
-  <header>
-    <img src="http://i.imgur.com/mlr9xmd.jpg" width="200" height="200">
-    <h1>Julio Villafane</h1>
+<body>
+
+
+
+
+
+
+<div class="pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
+    <a href="#" class="pure-menu-heading">Your Logo</a>
     <ul>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Research Business Decks</a></li>
-      <li><a href="#">Contact</a></li>
+        <li><a href="#">Home</a></li>
+        <li class="pure-menu-selected"><a href="#">Pricing</a></li>
+        <li><a href="#">Contact</a></li>
     </ul>
-  </header>
-  <article>
-    <h2>The road to IT</h2>
-    <p>Coding--->Java/SQL/R/Python</p>
-    <button>Like</button>
-  </article>
-  <article>
-    <h2>Gymcentive assumptions</h2>
-    <p>Over 70% of Americans work out with their smartphones, and gym dropout rates are at an all time high. Smartphones can increase year-end retention via a loss-aversion tracking app</p>
-    <button>Like</button>
-  </article>
-  <article>
-    <h2>uShare & uMopeds transportation models</h2>
-    <p>Green mode of transport with visualization dashboards to gamify/incentivize ridership</p>
-    <button>Like</button>
-  </article>
-  <script>
-    $("button").on("click", function() {
-      alert("Clicked!");
-    });
-  </script>
+</div>
+
+<div class="banner">
+    <h1 class="banner-head">
+        Simple Pricing.<br>
+        Try before you buy.
+    </h1>
+</div>
+
+<div class="l-content">
+    <div class="pricing-tables pure-g-r">
+        <div class="pure-u-1-3">
+            <div class="pricing-table pricing-table-free">
+                <div class="pricing-table-header">
+                    <h2>Personal</h2>
+
+                    <span class="pricing-table-price">
+                        $5 <span>per month</span>
+                    </span>
+                </div>
+
+                <ul class="pricing-table-list">
+                    <li>Free setup</li>
+                    <li>Custom sub-domain</li>
+                    <li>Standard customer support</li>
+                    <li>1GB file storage</li>
+                    <li>1 database</li>
+                    <li>Unlimited bandwidth</li>
+                </ul>
+
+                <button class="pure-button button-choose">Choose</button>
+            </div>
+        </div>
+
+        <div class="pure-u-1-3">
+            <div class="pricing-table pricing-table-biz pricing-table-selected">
+                <div class="pricing-table-header">
+                    <h2>Small Business</h2>
+
+                    <span class="pricing-table-price">
+                        $25 <span>per month</span>
+                    </span>
+                </div>
+
+                <ul class="pricing-table-list">
+                    <li>Free setup</li>
+                    <li>Use your own domain</li>
+                    <li>Standard customer support</li>
+                    <li>10GB file storage</li>
+                    <li>5 databases</li>
+                    <li>Unlimited bandwidth</li>
+                </ul>
+
+                <button class="pure-button button-choose">Choose</button>
+            </div>
+        </div>
+
+        <div class="pure-u-1-3">
+            <div class="pricing-table pricing-table-enterprise">
+                <div class="pricing-table-header">
+                    <h2>Enterprise</h2>
+
+                    <span class="pricing-table-price">
+                        $45 <span>per month</span>
+                    </span>
+                </div>
+
+                <ul class="pricing-table-list">
+                    <li>Free setup</li>
+                    <li>Use your own domain</li>
+                    <li>Premium customer support</li>
+                    <li>Unlimited file storage</li>
+                    <li>25 databases</li>
+                    <li>Unlimited bandwidth</li>
+                </ul>
+
+                <button class="pure-button button-choose">Choose</button>
+            </div>
+        </div>
+    </div> <!-- end pricing-tables -->
+
+    <div class="information pure-g-r">
+        <div class="pure-u-1-2">
+            <div class="l-box">
+                <h3 class="information-head">Get started today</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                </p>
+            </div>
+        </div>
+
+        <div class="pure-u-1-2">
+            <div class="l-box">
+                <h3 class="information-head">Pay monthly or annually</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.
+                </p>
+            </div>
+        </div>
+
+        <div class="pure-u-1-2">
+            <div class="l-box">
+                <h3 class="information-head">24/7 customer support</h3>
+                <p>
+                    Cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+        </div>
+
+        <div class="pure-u-1-2">
+            <div class="l-box">
+                <h3 class="information-head">Cancel your plan anytime</h3>
+                <p>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </div>
+    </div> <!-- end information -->
+</div> <!-- end l-content -->
+
+<div class="footer">
+    <p class="l-box">
+        <a href="#">Try now</a> for 14 days. No credit card required. Header image courtesy of <a href='http://unsplash.com/'>Unsplash</a>.
+    </p>
+</div>
+
+
+
+
 </body>
 </html>
-
